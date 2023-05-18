@@ -1,30 +1,37 @@
 {
-    "name": "Spicy Prawn Soup",
-    "ingredients": [
-      "500g prawns",
-      "2 tablespoons vegetable oil",
-      "1 onion, diced",
-      "3 cloves garlic, minced",
-      "1 thumb-sized ginger, grated",
-      "2 red chilies, sliced",
-      "1 teaspoon paprika",
-      "1 teaspoon cayenne pepper",
-      "2 cups chicken or vegetable broth",
-      "1 cup coconut milk",
-      "2 tablespoons fish sauce",
-      "Juice of 1 lime",
-      "Salt to taste",
-      "Fresh cilantro, chopped (for garnish)"
-    ],
-    "steps": [
-      "Heat vegetable oil in a large pot over medium heat.",
-      "Add diced onion, minced garlic, grated ginger, and sliced chilies. Sauté until fragrant.",
-      "Add paprika and cayenne pepper. Stir well to combine.",
-      "Add prawns to the pot and cook until they turn pink.",
-      "Pour in the chicken or vegetable broth and bring to a simmer.",
-      "Stir in the coconut milk and fish sauce. Let it simmer for another 5 minutes.",
-      "Squeeze in the lime juice and season with salt to taste.",
-      "Serve the spicy prawn soup hot, garnished with fresh cilantro."
-    ]
+  "name": "Spicy Prawn Soup",
+  "ingredients": [
+    "500g prawns",
+    "2 tablespoons vegetable oil",
+    "1 onion, diced",
+    "3 cloves garlic, minced",
+    "1 thumb-sized ginger, grated",
+    "2 red chilies, sliced",
+    "1 teaspoon paprika",
+    "1 teaspoon cayenne pepper",
+    "2 cups chicken or vegetable broth",
+    "1 cup coconut milk",
+    "2 tablespoons fish sauce",
+    "Juice of 1 lime",
+    "Salt to taste",
+    "Fresh cilantro, chopped (for garnish)"
+  ],
+  "steps": [
+    "Heat vegetable oil in a large pot over medium heat.",
+    "Add diced onion, minced garlic, grated ginger, and sliced chilies. Sauté until fragrant.",
+    "Add paprika and cayenne pepper. Stir well to combine.",
+    "Add prawns to the pot and cook until they turn pink.",
+    "Pour in the chicken or vegetable broth and bring to a simmer.",
+    "Stir in the coconut milk and fish sauce. Let it simmer for another 5 minutes.",
+    "Squeeze in the lime juice and season with salt to taste.",
+    "Serve the spicy prawn soup hot, garnished with fresh cilantro."
+  ],
+  "health_info": {
+    "calories": "320",
+    "protein": "25g",
+    "fat": "20g",
+    "carbs": "12g",
+    "sugar": "5g",
+    "sodium": "1500mg"
   }
-  
+}

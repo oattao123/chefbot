@@ -14,5 +14,13 @@
         "Add pork steaks and cook until browned on both sides, about 3 minutes per side.",
         "Transfer pork steaks to a baking dish and bake in preheated oven until cooked through, about 10-15 minutes.",
         "Serve hot."
-    ]
+    ],
+    "health_info": {
+        "calories": "470",
+        "protein": "30g",
+        "fat": "36g",
+        "carbs": "1g",
+        "fiber": "0g",
+        "sodium": "620mg"
+    }
 }

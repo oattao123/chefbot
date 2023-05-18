@@ -1,23 +1,30 @@
 {
-    "name": "Fried Sandwich",
-    "ingredients": [
-      "2 slices of bread",
-      "2 slices of cheese",
-      "4-6 slices of deli meat (e.g., ham, turkey, chicken)",
-      "2 tablespoons butter",
-      "Optional: mayonnaise, mustard, lettuce, tomato, pickles"
-    ],
-    "steps": [
-      "Spread butter on one side of each bread slice.",
-      "Place a slice of cheese on one bread slice.",
-      "Layer the deli meat on top of the cheese.",
-      "Add any desired additional toppings like mayonnaise, mustard, lettuce, tomato, or pickles.",
-      "Top with the other bread slice, buttered side facing up.",
-      "Heat a skillet or frying pan over medium heat.",
-      "Place the sandwich in the pan and cook until the bottom bread slice is golden brown.",
-      "Flip the sandwich and cook until the other side is golden brown and the cheese has melted.",
-      "Remove from the pan and let it cool for a minute.",
-      "Cut the sandwich in half or quarters, and serve hot."
-    ]
+  "name": "Fried Sandwich",
+  "ingredients": [
+    "2 slices of bread",
+    "2 slices of cheese",
+    "4-6 slices of deli meat (e.g., ham, turkey, chicken)",
+    "2 tablespoons butter",
+    "Optional: mayonnaise, mustard, lettuce, tomato, pickles"
+  ],
+  "steps": [
+    "Spread butter on one side of each bread slice.",
+    "Place a slice of cheese on one bread slice.",
+    "Layer the deli meat on top of the cheese.",
+    "Add any desired additional toppings like mayonnaise, mustard, lettuce, tomato, or pickles.",
+    "Top with the other bread slice, buttered side facing up.",
+    "Heat a skillet or frying pan over medium heat.",
+    "Place the sandwich in the pan and cook until the bottom bread slice is golden brown.",
+    "Flip the sandwich and cook until the other side is golden brown and the cheese has melted.",
+    "Remove from the pan and let it cool for a minute.",
+    "Cut the sandwich in half or quarters, and serve hot."
+  ],
+  "health_info": {
+    "calories": "500",
+    "protein": "25g",
+    "fat": "30g",
+    "carbs": "30g",
+    "sugar": "5g",
+    "sodium": "900mg"
   }
-  
+}

@@ -5,10 +5,11 @@ from gtts import gTTS
 from playsound import playsound
 
 class Recipe:
-    def __init__(self, name, ingredients, steps):
+    def __init__(self, name, ingredients, steps, health_info=None):
         self.name = name
         self.ingredients = ingredients
         self.steps = steps
+        self.health_info = health_info
 
     def display_ingredients(self):
         print("Ingredients:")
@@ -33,18 +34,28 @@ class Recipe:
             
             while True:
                 response = recognize_speech("Have you finished this step? (say 'yes' or 'no') ")
-                if response is not None and response.lower() == 'yes':
+                if response is not None and response.lower() == 'yes': # type: ignore
                     break
-                elif response is not None and response.lower() == 'no':
+                elif response is not None and response.lower() == 'no': # type: ignore
                     pass
                 else:
                     print("Could not recognize the response. Please try again.")
+
+    def display_health_info(self):
+        if self.health_info is not None:
+            print("Health Information:")
+            for key, value in self.health_info.items():
+                print(f"{key}: {value}")
+        else:
+            print("No health information available for this recipe.")
+
+ 
 
 def load_recipe_from_file(file_path):
     try:
         with open(file_path, "r") as file:
             data = json.load(file)
-        return Recipe(data["name"], data["ingredients"], data["steps"])
+        return Recipe(data["name"], data["ingredients"], data["steps"], data.get("health_info"))
     except FileNotFoundError:
         print(f"Error: Could not find file '{file_path}'.")
         return None
@@ -92,8 +103,13 @@ def main():
         os.path.join(recipe_directory, 'grilled_cheese.json'),
         os.path.join(recipe_directory, 'lasagna.json'),
         os.path.join(recipe_directory, 'steak.json'),
-        os.path.join(recipe_directory, 'spaghetti.json')
-        
+        os.path.join(recipe_directory, 'spaghetti.json'),
+        os.path.join(recipe_directory, 'fried_rice.json'),
+        os.path.join(recipe_directory, 'fried_sandwich.json'),
+        os.path.join(recipe_directory, 'fried_cream_salad.json'),
+        os.path.join(recipe_directory, 'pizza.json'),
+        os.path.join(recipe_directory, 'spicy_prawn_soup.json'),
+        os.path.join(recipe_directory, 'scrambled.json')
     ]
     recipes = [load_recipe_from_file(recipe_file) for recipe_file in recipe_files]
     recipes = [recipe for recipe in recipes if recipe is not None]
@@ -118,12 +134,12 @@ def main():
         print("\nSay the number of the recipe you want to display or 'exit' to quit:")
         choice_text = recognize_speech()
 
-        if choice_text is not None and choice_text.lower() == 'exit':
+        if choice_text is not None and choice_text.lower() == 'exit': # type: ignore
             print("Goodbye!")
             break
 
-        if choice_text is not None and choice_text.isdigit():
-            choice = int(choice_text) - 1
+        if choice_text is not None and choice_text.isdigit(): # type: ignore
+            choice = int(choice_text) - 1 # type: ignore
             if 0 <= choice < len(recipes):
                 selected_recipe = recipes[choice]
 
@@ -134,22 +150,23 @@ def main():
                 print("Say an ingredient you want to check in the recipe (or 'skip' to skip):")
                 ingredient_text = recognize_ingredient()
 
-                if ingredient_text is not None and ingredient_text.lower() == 'skip':
+                if ingredient_text is not None and ingredient_text.lower() == 'skip': # type: ignore
                     pass
                 elif ingredient_text is not None:
-                    if any(ingredient.lower() in ingredient_text.lower() for ingredient in selected_recipe.ingredients):
+                    if any(ingredient.lower() in ingredient_text.lower() for ingredient in selected_recipe.ingredients): # type: ignore
                         print("The ingredient is in the recipe.")
                     else:
                         print("The ingredient is not in the recipe.")
 
                 selected_recipe.display_steps()
+                selected_recipe.display_health_info()
 
                 while True:
                     print("Have you finished these steps yet? (yes or no)")
                     response = recognize_speech()
-                    if response is not None and response.lower() == 'yes':
+                    if response is not None and response.lower() == 'yes': # type: ignore
                         break
-                    elif response is not None and response.lower() == 'no':
+                    elif response is not None and response.lower() == 'no': # type: ignore
                         selected_recipe.display_steps()
                     else:
                         print("Could not recognize the response. Please try again.")
@@ -157,5 +174,4 @@ def main():
                 print("Invalid choice. Please try again.")
         else:
             print("Could not recognize the choice. Please try again.")
- 
 

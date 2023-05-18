@@ -1,19 +1,26 @@
 {
-    "name": "Grilled Cheese Sandwich",
-    "ingredients": [
-      "2 slices of bread",
-      "2 slices of cheese",
-      "1 tablespoon butter"
-    ],
-    "steps": [
-      "Preheat a skillet over medium heat.",
-      "Butter one side of each slice of bread.",
-      "Place one slice of bread, buttered side down, in the skillet.",
-      "Add the cheese slices on top of the bread.",
-      "Place the second slice of bread, buttered side up, on top of the cheese.",
-      "Cook until the bottom slice of bread is golden brown, then flip the sandwich.",
-      "Cook until the second slice of bread is golden brown and the cheese is melted.",
-      "Remove from skillet, let cool for a minute, and then cut into halves. Serve immediately."
-    ]
+  "name": "Grilled Cheese Sandwich",
+  "ingredients": [
+    "2 slices of bread",
+    "2 slices of cheese",
+    "1 tablespoon butter"
+  ],
+  "steps": [
+    "Preheat a skillet over medium heat.",
+    "Butter one side of each slice of bread.",
+    "Place one slice of bread, buttered side down, in the skillet.",
+    "Add the cheese slices on top of the bread.",
+    "Place the second slice of bread, buttered side up, on top of the cheese.",
+    "Cook until the bottom slice of bread is golden brown, then flip the sandwich.",
+    "Cook until the second slice of bread is golden brown and the cheese is melted.",
+    "Remove from skillet, let cool for a minute, and then cut into halves. Serve immediately."
+  ],
+  "health_info": {
+    "calories": "420",
+    "protein": "15g",
+    "fat": "27g",
+    "carbs": "28g",
+    "sugar": "3g",
+    "sodium": "710mg"
   }
-  
+}

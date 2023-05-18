@@ -17,5 +17,13 @@
         "In a large saucepan, heat olive oil over medium heat. Add onion and cook until softened, about 5 minutes. Add garlic and red pepper flakes, and cook for an additional 30 seconds.",
         "Stir in crushed tomatoes, salt, and black pepper. Bring to a simmer and cook for 10-15 minutes, until the sauce has thickened.",
         "Stir in fresh basil and cooked spaghetti. Serve hot, topped with grated Parmesan cheese."
-    ]
+    ],
+    "health_info": {
+      "calories": "400",
+      "protein": "14g",
+      "fat": "10g",
+      "carbs": "65g",
+      "sugar": "8g",
+      "sodium": "750mg"
+    }
 }
