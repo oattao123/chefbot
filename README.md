@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/oattao123/chefbot.git">
-    <img src="image/logo.png" alt="Logo" width="80" height="80">
+    <img src="image/logo_1.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">chefbot</h3>
