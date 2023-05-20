@@ -109,7 +109,6 @@ def main():
         os.path.join(recipe_directory, 'fried_cream_salad.json'),
         os.path.join(recipe_directory, 'pizza.json'),
         os.path.join(recipe_directory, 'spicy_prawn_soup.json'),
-        os.path.join(recipe_directory, 'scrambled.json')
     ]
     recipes = [load_recipe_from_file(recipe_file) for recipe_file in recipe_files]
     recipes = [recipe for recipe in recipes if recipe is not None]
